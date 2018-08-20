@@ -8,6 +8,10 @@ function re_zero() {
   document.getElementById("header").innerHTML = "0"
 }
 function calcul() {
+  while (op[0] == 0) {
+    op.splice(0,1)
+  }
+  op.unshift(0)
   var1 = op[0]
   var2 = op[2]
   switch (op[1]) {
