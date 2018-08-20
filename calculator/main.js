@@ -1,6 +1,8 @@
-$(".btn").click(function(event){
-  var clicked = this.innerHTML
-  console.log("you clicked: ", clicked)
-  $(".header").html(clicked)
-})
-alert("Hello")
+var op = []
+function listener(number) {
+  op.push(number)
+  document.getElementById("header").innerHTML = op.join('')
+}
+function calcul() {
+  op.forEach
+}
